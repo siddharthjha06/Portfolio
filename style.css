@@ -32,6 +32,46 @@ header {
   align-items: center;
 }
 
+h1 {
+  font-size: 1em;
+}
+
+h1>span {
+  position: relative;
+  display: inline-block;
+  color: #beaf6c;
+  height: 1.25em;
+  vertical-align: bottom;
+  overflow: hidden;
+}
+
+h1>span>span {
+  display: block;
+  animation: animatewords 5s infinite ease;
+}
+
+@keyframes animatewords {
+  0% {
+    transform: translateY(0%);
+  }
+
+  25% {
+    transform: translateY(-100%);
+  }
+
+  50% {
+    transform: translateY(-200%);
+  }
+
+  75% {
+    transform: translateY(-300%);
+  }
+
+  100% {
+    transform: translateY(-400%);
+  }
+}
+
 .logo {
   font-size: 1.8rem;
   font-weight: bold;
