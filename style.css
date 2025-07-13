@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #f4f4f4;
+  background-color: #c6c8a1;
   color: #333;
   transition: background-color 0.4s, color 0.4s;
 }
@@ -18,7 +18,7 @@ body {
 }
 
 header {
-  background-color: #f7fffe;
+  background-color: #c6c8a1;
   padding: 1rem 0;
   color: #223b37;
   position: sticky;
@@ -113,7 +113,7 @@ h1 > span > span {
 }
 
 .btn {
-  background-color: white;
+  background-color: #c6c8a1;
   color: #223b37;
   padding: 0.75rem 2rem;
   border-radius: 8px;
@@ -128,7 +128,7 @@ h1 > span > span {
 }
 
 .btn:hover {
-  background-color: #e6f2f1;
+  background-color: #c6c8a1;
   transform: translateY(-2px);
 }
 
@@ -141,7 +141,7 @@ h1 > span > span {
 .skills h1 {
   margin-bottom: 2rem;
   font-size: 24px;
-  color: #ccc;
+  color: #c6c8a1;
 }
 
 .skills-logos {
@@ -176,7 +176,7 @@ h1 > span > span {
 .projects h2 {
   text-align: center;
   margin-bottom: 2rem;
-  color: #ccc;
+  color: #c6c8a1;
 }
 
 .projects .card a {
@@ -198,7 +198,7 @@ h1 > span > span {
 }
 
 .card {
-  background-color: #f0f0f0;
+  background-color: #c6c8a1;
   padding: 1.5rem;
   border-radius: 12px;
   width: 280px;
@@ -212,7 +212,7 @@ h1 > span > span {
 
 .contact {
   padding: 3rem 0;
-  background-color: #e9f7f6;
+  background-color: #c6c8a1;
   text-align: center;
 }
 
@@ -227,13 +227,14 @@ h1 > span > span {
 .contact-form input,
 .contact-form textarea {
   padding: 0.8rem;
-  border: 1px solid #ccc;
+  border: 1px solid #223b37;
+  background-color: #f6eed9;
   border-radius: 6px;
   font-size: 1rem;
 }
 
 footer {
-  background-color: #f3f3f3;
+  background-color: #c6c8a1;
   color: #050505;
   text-align: center;
   padding: 1rem 0;
@@ -241,7 +242,7 @@ footer {
 
 .dark-mode {
   background-color: #121212;
-  color: #e0e0e0;
+  color: #c6c8a1;
 }
 
 .dark-mode header,
@@ -265,7 +266,7 @@ footer {
 .dark-mode .contact-form input,
 .dark-mode .contact-form textarea {
   background-color: #222;
-  color: white;
+  color: #c6c8a1;
   border: 1px solid #444;
 }
 
@@ -291,10 +292,10 @@ footer {
   }
 }
 :root {
-      --bg-color-light: #ffffff;
+      --bg-color-light: #c6c8a1;
       --text-color-light: #000000;
       --bg-color-dark: #121212;
-      --text-color-dark: #ffffff;
+      --text-color-dark: #c6c8a1;
     }
 
     body {
@@ -337,7 +338,7 @@ footer {
       left: 0;
       right: 0;
       bottom: 0;
-      background-color: #ccc;
+      background-color: #223b37;
       transition: 0.4s;
       border-radius: 34px;
     }
@@ -349,13 +350,13 @@ footer {
       width: 26px;
       left: 4px;
       bottom: 4px;
-      background-color: white;
+      background-color: #c6c8a1;
       transition: 0.4s;
       border-radius: 50%;
     }
 
     input:checked + .slider {
-      background-color: #beaf6c
+      background-color: #beaf6c;
     }
 
     input:checked + .slider::before {
