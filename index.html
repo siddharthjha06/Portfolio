@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Siddharth | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <div class="container nav-container">
+      <h1 class="logo">Siddharth Jha</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+        </ul>
+      </nav>
+
+      <div class="toggle-container">
+        <label class="toggle-switch">
+          <input type="checkbox" id="themeToggle">
+          <span class="slider"></span>
+        </label>
+      </div>
+    </div>
+  </header>
+  <section id="home" class="hero">
+    <div class="container">
+      <div class="center">
+        <img src="img1.png" alt="Siddharth.img" class="profile-img">
+        <h2>Hi, I am Siddharth Jha</h2>
+        <h1>
+          I'M A
+          <span>
+            <span>Web Developer</span>
+            <span>Coder</span>
+            <span>Programmer</span>
+            <span>Designer</span>
+          </span>
+        </h1>
+
+        <a href="Resume.pdf" download class="btn">Download Resume</a>
+      </div>
+
+      <div id="skills" class="skills">
+        <h1>Skills</h1>
+        <div class="skills-logos">
+          <img src="c.svg" alt="C" class="skills-logo">
+          <img src="py.svg" alt="Python" class="skills-logo">
+          <img src="html.svg" alt="HTML" class="skills-logo">
+          <img src="css.svg" alt="CSS" class="skills-logo">
+          <img src="js.svg" alt="JavaScript" class="skills-logo">
+          <img src="ms.svg" alt="MS Office" class="skills-logo">
+          <img src="canva.svg" alt="Canva" class="skills-logo">
+          <img src="gpt.svg" alt="ChatGPT" class="skills-logo">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="services">
+    <div class="container">
+      <h2>Services</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Web Design</h3>
+          <p>Creating responsive and elegant interfaces using HTML, CSS, JavaScript.</p>
+        </div>
+        <div class="card">
+          <h3>Frontend Development</h3>
+          <p>Building dynamic, fast, and accessible user interfaces with modern tech.</p>
+        </div>
+        <div class="card">
+          <h3>UI/UX Enhancements</h3>
+          <p>Improving website user experience and aesthetic appeal.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Qr Generator App</h3>
+          <a href="app-debug.apk">An Android app that lets users input text and instantly generate a QR code</a>
+        </div>
+        <div class="card">
+          <h3>BG remover BOT</h3>
+          <a href="https://t.me/BG_remover_06_bot">Remove background of your image fastly using telegram bot.</a>
+        </div>
+        <div class="card">
+          <h3>Weather App</h3>
+          <a href="https://siddharthjha06.github.io/Weather-System/">Fetches real-time weather using an API and shows
+            location-based data.</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Siddharth Jha. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('themeToggle');
+    const body = document.body;
+
+    // Load saved theme
+    if (localStorage.getItem('theme') === 'dark') {
+      body.classList.add('dark-mode');
+      toggle.checked = true;
+    }
+
+    toggle.addEventListener('change', () => {
+      if (toggle.checked) {
+        body.classList.add('dark-mode');
+        localStorage.setItem('theme', 'dark');
+      } else {
+        body.classList.remove('dark-mode');
+        localStorage.setItem('theme', 'light');
+      }
+    });
+  </script>
+</body>
+
+</html>
