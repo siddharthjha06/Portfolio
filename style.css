@@ -99,9 +99,9 @@ a:hover {
   display: inline-block;
 }
 #heroimg{
-  height: 400px;
-  width: 400px;
-  border-radius: 50%;
+  height: 350px;
+  width: 240px;
+  border-radius: 6%;
   box-shadow:10px 10px 10px 5px #566379;
 }
 
